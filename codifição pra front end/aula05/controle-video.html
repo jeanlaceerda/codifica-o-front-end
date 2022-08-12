@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vídeos</title>
+</head>
+<body>
+	<h1>Vídeos:</h1>
+	<video width="500" height="300" id="video1">
+		<source src="src/video.mp4" type="video/mp4" controls>
+	</video>
+	
+	<h2>Controles:</h2>
+	
+	<input type="button" value="iniciar/pausar" onclick="playPause()">
+	<input type="button" value="Aumentar" onclick="aumentarVideo()">
+	<input type="button" value="Diminuir" onclick="diminuirVideo()">
+	<input type="button" value="Voltar ao padrão" onclick="voltarPadrao()">
+	
+	<script type="text/javascript">
+		let meuVideo = document.querySelector("#video1");
+		
+		function playPause(){
+			
+			if(meuVideo.paused){
+				meuVideo.play()
+			}else{
+				meuVideo.pause()
+			}
+		}
+	
+		function aumentarVideo(){
+			meuVideo.width = 700
+			meuVideo.height = 400
+		}
+		
+		function diminuirVideo(){
+			meuVideo.width = 650
+			meuVideo.height = 350
+		}
+		function voltarPadrao(){
+			meuVideo.width = 500
+			meuVideo.height = 300
+		}
+	</script>
+	
+</body>
+</html>
