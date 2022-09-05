@@ -1,18 +1,35 @@
-body{
-	margin:0;
-	padding:0;
-	text-align: center;
-	font-family: sans-serif;
-	background-color: rgb(230,230,230);
+div.formulario{
+	display:flex;
+	margin-top:10vh;
+	color: black;
+	justify-content:center;
+}
+form.box{
+	width:30vw;
+	height:20vh;
+	border: solid 0.5vw black;
+	text-align:center;
+	background-color: blue;
+	margin-top:10vh;
 }
 
-div#div-lista{
-	min-height:50vh;
-	background-color: rgb(245, 245, 245);
-	margin-left:10vw;
-	margin-right:10vw;
-	border:solid 1px #999;
-	border-radius:20px;
-	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+form.box label{
+	font-size:20px;
+	
+}
+
+div.formulario #nome-usuario{
+	width: 10vw;
+	border-radius: 1vw;
+	text-align:center;
+	margin-top:5vh;
+}
+
+div.formulario #email{
+	width: 13.30vw;
+	border-radius: 1vw;
+}
+
+div.formulario #botao{
 	
 }

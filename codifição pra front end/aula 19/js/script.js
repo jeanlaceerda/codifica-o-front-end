@@ -1,35 +1,41 @@
-let n1 = 10;
-let n2 = 2;
+let videoD = document.querySelector("#videoDrake");
 
-let media = (n1 + n2) / 2
-
-
-switch(media >= 8.5){
-	case true:
-		console.log("Parabéns,seu conceito é A ");
-		break;
-}
-
-switch(media >= 7.0 && media < 8.5 ){
-	case true:
-		console.log("Você passou , Seu conceito é B ");
-		break;
-}
-
-switch(media >= 5.0 && media < 7.0 ){
-	case true:
-		console.log("Você passou no sufoco, Seu conceito é C ");
-		break;
-}
-
-switch(media < 5.0 && media > 1.0 ){
-	case true:
-		console.log("Você precisa estudar mais , Seu conceito é D ");
-		break;
-
-}
-switch(media < 1 && media == 0 ){
-	case true:
-		console.log("Você está reprovado, seu conceito é E ")
-		break;
+	function playEpause(){
+		
+		if(videoD.paused){
+			videoD.play()
+		}else{
+			videoD.pause()
+		}
+		
+	}
+	
+	function modoNoturno(){
+		
+		let textoH1 = document.getElementById("titulo");
+		let botaoA = document.getElementById("botao");
+		let textoP = document.getElementById("P1texto");
+	
+		if(textoH1.innerHTML == "Modo Diurno"){
+			document.body.style.backgroundColor = "black";
+			textoH1.innerHTML = "Modo Noturno";
+			textoH1.style.color = "white";
+				
+			botaoA.style.backgroundColor = "black";
+			botaoA.style.color = "black;"
+			botaoA.innerHTML = "Ativar Modo Diurno";
+			
+			textoP.style.color = "white";
+			
+		}else{
+			document.body.style.backgroundColor = "white";
+		
+			textoH1.innerHTML = "Modo Diurno";
+			textoH1.style.color = "black";
+			botaoA.style.backgroundColor = "black";
+			botaoA.style.color = "white";
+			botaoA.innerHTML = "Ativar Modo Noturno";
+			
+			textoP.style.color = "black";
+		}
 }

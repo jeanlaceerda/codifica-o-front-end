@@ -1,43 +1,16 @@
-let marcaVw = ["polo", "Jeta", "Gol" ,"Nivus", "Taos"]
-let marcaGm = ["Camaro", "Cruze", "Onix", "Spin", "Joy"]
-let marcaFiat = ["Pulse", "Argo", "Mobi", "Cronos", "Toro"]
-
-
-if(marcaVw[2] == "Gol"){
-	console.log("Meu carro é um " + marcaVw[2])
-}else{
-	console.log("Estou liso , não tenho carro !")
-}
-
-if(marcaGm[0] == "Camaro"){
-	console.log("Meu carro é um " + marcaGm[0] + " amarelo")
-}
-else{
-	console.log("Estou liso , Vou trabalhar pra comprar um carro")
-}
-
-if(marcaFiat[1]== "Mobi"){	
-	console.log("Meu carro é um " + marcaFiat[3])
-}else{
-	console.log("Estou liso , Vou trabalhar pra comprar um carro")
-}
-
-for(i = 0; i < marcaVw.length; i++){
-	if(marcaVw[i] == "Taos"){
-		console.log("Achei meu carro na posição " + i)
+function validarInput(){
+	let nome = document.getElementById("nome-usuario").value;
+	let email = document.getElementById("email").value;
+	
+	if(!(nome.length >5 ) || !nome.includes(" ") || !nome.entries()){
+		alert("Verifique o preenchimento do campo indicado")
+		document.getElementById("nome-usuario").style.borderColor = "red";
+	
+	}else if(!(email.length > 10) || !email.includes("@") || !email.includes(".com") && !email.includes(".br") ){
+		alert("Verifique o preenchimento do campo indicado");
+		document.getElementById("email").style.borderColor = "red";
 	}else{
-		console.log("Esse não é meu carro " + marcaVw[i])
+		document.getElementById("nome-usuario").style.borderColor = "green";
+		document.getElementById("email").style.borderColor = "green";
 	}
 }
-
-
-let frutas = ["Maça", "Melão", "Mamão", "Uva", "Manga", "Banana", "melância", "Graviola", "Acerola", "Jambo", "Caju"]
-
-for(i = 0; i < frutas.length; i++){
-	if(frutas[i] == "Manga"){
-		console.log("Achei a fruta que quero , na posição " + i ,"essa fruta é " + frutas[i])
-	}else{
-		console.log("Essa não é a fruta que eu quero , essa é a fruta " + frutas[i])
-	}
-}
-

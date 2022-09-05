@@ -3,22 +3,26 @@
 <head> 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aprendendo Javascript | Aula 2</title>
+	<title>Aprendendo Javascript | Aula 04</title>
 	<link rel="stylesheet" href="css/style.css">
 	
 </head>
 <body>
-	<h1 id="titulo-lista">Lista de animais:</h1>
-	<div id="div-lista">
-		<ul id="lista"></ul>
-			
+	<div class="formulario">
+		
+		<form class="box">
+			<label>Digite seu nome completo:</label>
+			<input type="text" id="nome-usuario">
+			<br />
+			<label>Digite seu email:</label>
+			<input type="text" id="email">
+			<br />
+			<input id="botao" type="button" value="Enviar" onclick="validarInput()">
+		
+		</form>
 	</div>
-		
-		
-		
-		
-	<script src="js/scriptanimais.js"></script>
 	
-	
+	<script src="js/script.js"></script>
+	<script src="js/script2.js"></script>
 </body>
 </html>

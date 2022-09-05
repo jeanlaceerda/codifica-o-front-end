@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Edu+VIC+WA+NT+Beginner&family=Roboto+Slab:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,500&display=swap');
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'BhuTuka Expanded One', cursive;
+	font-family: 'Edu VIC WA NT Beginner', cursive;
+	font-family: 'Roboto Slab', serif;
+}
+
+
+ul{
+	margin: 0px;
+	padding: 15px;
+	list-style-type: none;
+	background-color: #333;
+}
+li{
+	display: inline;
+}
+li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 16px;
+}
+li a:hover:not(.active){
+	background-color: #111;
+}
+
+.active{
+	background-color: #2e8b57;
+}
+.menu-login{
+	float: right;
+}
+div.conteudo{
+	min-height: 500px;
+	background-color: #111;
+	padding: 10px;
+	color: #fff;
+}
+
+div.conteudo h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-shadow: 3px 3px 5px #2e8b57;
+	animation: qualquerValor 3s linear infinite;
+	/* animation: qualquervalor'declaranome' 3s'tempo' linear'modo' infinite'modo2'; */
+	
+}
+div.conteudo p{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 60px;
+	text-align: justify;
+	text-indent: 75px;
+	letter-spacing: 2px;
+	line-height: 2;
+}
+div.conteudo-img{
+	background-image: url('../img/gif.gif');
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	
+	
+}
+div.conteudo-img h3 {
+	color: black;
+	text-align: center;
+	margin-top: 100px;
+	
+}
+
+div.card{
+	border:solid 1px #fff;
+	border-radius: 30px;
+	background-color: rgba (255, 255, 255, 0.3);
+	background-color: #fff;
+	margin-top:20px;
+	margin-left:20px;
+	min-width:20%;
+	min-height: 100px;	
+	
+	
+	
+}
+div.card button.vendas{
+	
+}
+
+div.card img{
+	margin-top: 5px;
+	margin-left: 60px;
+	max-height: 200px;
+	
+}
+div.conteudo-img h2{
+	font-size:20px;
+	color: red;
+	text-align: center;
+	font-family: 'Libre Bodoni', serif;
+}
+img:hover{
+	background-color: green;
+	opacity: 0.5;
+}
+
+@keyframes qualquerValor{
+	0%{
+		opacity: 0.1;
+	}
+	50%{
+		opacity:0.8;
+	}
+	100%{
+		opacity:0.1;
+	}
+}
+
+

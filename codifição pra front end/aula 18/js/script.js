@@ -1,20 +1,27 @@
-let atribuicao = "atribuição";
-console.log(atribuicao)
-let x = 30;
-let y = 2;
+function adicionarItem(){
+	let valor = document.getElementById("frutas").value;
+	let list = document.getElementById("nameFruit");
+	
+	if(valor == "" || valor.length < 3){
+		alert("O campo está vazio ou está inválido")
+			
+	}else{
+	
+		
+	list.innerHTML += "<li>" + valor + "</li>"
+	
+	document.getElementById("frutas").value = "";
+	}
+	console.log(valor)
+	console.log(list)
+	
+	
+	
+}
 
-console.log("O operador de adição retorna ", x + y)
-console.log("O operador de subtração retorna ", x - y)
-console.log("O operador de multiplicação retorna ", x * y)
-console.log("O operador de divisão retorna ", x / y)
+	
 
-let num1 = 10;
-let num2 = 3;
-console.log("O operador de exponenciação retorna ", num1 ** num2);
-console.log("O operador de módulo(resto de divisão) retorna ", num1 % num2);
-console.log("Num1 valia ", num1);
-num1++;
-console.log("Agora vale", num1++);
-console.log("num2 valia", num2);
-num2--
-console.log("Agora vale", num2--);
+	
+	
+	
+	
